@@ -5,24 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-       a:hover{
-        text-decoration: none;
+       .container{
+        background-color: darkgoldenrod;
+        border-radius: 30px;
+        }
+        .container ul{
+            overflow: auto;
+        }
+        .container li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .container li a{
+           padding: 3px 3px;
+           text-decoration: none;
+           color: black;
+       }
+
+       .container li a:hover{
+           color: white;
+       }
+
+       .search{
+            color: white;
+            padding: 12px 75px;
+       }
+       .container input{
+             float: right;
+             border: 2px solid black;
+             border-radius: 14px;
+             padding: 3px 17px;
+             width: 129px;  
        }
     </style>
 
     <title></title>
-    
 </head>
 <body >
-    <div >
-       <a class="container" href="./Home.html">Home</a>
-       <a class="container" href="./About.html">About</a>
-       <a class="container" href="./Info.html">Info</a>
-       <a class="container" href="./ContactUs.html">Contact Us</a>
-    </div>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a  href="./Home.html">Home</a></li>
+                <li><a  href="./About.html">About</a></li>
+                <li><a  href="./Info.html">Info</a></li>
+                <li><a  href="./ContactUs.html">Contact Us</a></li>
 
+                <div class="search">
+                    <input type="text" name="search" id="searchh" placeholder="Search this website">
+                </div>
 
-    
-  
+            </ul>
+            
+        </nav>
+    </header>
+
 </body>
 </html>
